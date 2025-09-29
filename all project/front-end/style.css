@@ -1,0 +1,147 @@
+:root {
+  --main-blue: #003366;
+  --accent-blue: #336699;
+  --light-bg: #f5f6fa;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+header {
+  background: var(--main-blue);
+  color: var(--text-light);
+  padding: 1rem;
+  text-align: center;
+}
+
+header a.back-btn {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.college-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.college-list a {
+  background: var(--text-light);
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--main-blue);
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.college-list a:hover {
+  background: var(--accent-blue);
+  color: var(--text-light);
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.post-card {
+  background: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: right;
+  border: 1px solid #e0e0e0;
+}
+
+.post-card img {
+  width: 100%;
+  max-width: 150px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.post-card h3 {
+  color: var(--main-blue);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.post-card p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.add-post {
+  margin-top: 2rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background: var(--main-blue);
+  color: var(--text-light);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.add-post:hover {
+  background: var(--accent-blue);
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e0e0e0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: var(--accent-blue);
+}
+
+.error {
+  text-align: center;
+  padding: 1rem;
+  background: #ffebee;
+  color: #c62828;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
